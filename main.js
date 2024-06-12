@@ -31,4 +31,16 @@ var Perguntas = [
         "Surpreendente","Mão de obra barata"
     ]
 }
-]
+];
+
+var posiçaoAtual = 0;
+var perguntaAtual;
+
+mostraPrgunta();
+
+function mostraPergunta(){
+
+    perguntaAtual = perguntas[posiçaoAtual];
+    cxPerguntas.textContent = perguntaAtual.enunciado;
+
+}
